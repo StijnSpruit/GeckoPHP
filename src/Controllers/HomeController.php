@@ -1,10 +1,16 @@
 <?php
-namespace App;
-use App\core\Base\BaseController;
+namespace Stijnspruit\GeckoPhp\Controllers;
+use core\Base\BaseController;
 
 class HomeController extends BaseController
 {
-    public function index() {
+    public function routes(): void
+    {
+        $this->router->add('GET','/', $this->index());
+        $this->router->match();
+    }
+    public function index(): void
+    {
         $this->render('Templates/Home/Home.latte', [
             "controllerName" => 'HomeController'
         ]);

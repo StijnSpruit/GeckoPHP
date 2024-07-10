@@ -1,0 +1,20 @@
+{
+    "name": "stijnspruit/gecko-php",
+    "description": "Gecko PHP framework",
+    "autoload": {
+        "psr-4": {
+            "Stijnspruit\\GeckoPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stijn Spruit",
+            "email": "168417@student.horizoncollege.nl"
+        }
+    ],
+    "require": {
+        "latte/latte": "^3.0",
+        "symfony/routing": "^7.1",
+        "symfony/http-foundation": "^7.1"
+    }
+}
